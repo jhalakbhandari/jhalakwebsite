@@ -7,7 +7,7 @@ function Navbar() {
       <div className=" shadow-md top-0 left-0 py-2  text-white bg-black">
         <ul className="flex justify-evenly px-10">
           <li>
-            <Link to="/" exact className="no-underline text-white">
+            <Link to="/Glimpseweb/" exact className="no-underline text-white">
               About
             </Link>
           </li>

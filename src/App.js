@@ -15,7 +15,7 @@ function App() {
 
       <div>
         <Routes>
-          <Route path="/" element={<Home />} exact />
+          <Route path="/Glimpseweb/" element={<Home />} exact />
 
           <Route path="/projects" element={<Projects />} />
 
