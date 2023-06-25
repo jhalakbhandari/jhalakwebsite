@@ -1,27 +1,26 @@
 import React from "react";
 import { Route, Routes } from "react-router";
-import Navbar from "./Components/Navbar";
-import Contact from "./Pages/Contact";
+import Contact from "./Pages/ContactPage/Contact";
 //import Gallery from "./Pages/Gallery";
 import Home from "./Pages/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Projects from "./Pages/Projects";
-import Footer from "./Components/Footer";
+import Projects from "./Pages/ProjectsPage/Projects";
+import { Navigate } from "react-router-dom";
+import Login from "./Pages/LoginPage/Login";
 function App() {
   return (
     <>
-      <Navbar />
-
       <div>
         <Routes>
-          <Route path="/Glimpseweb/" element={<Home />} exact />
+          <Route path="/" element={<Navigate to={"./home"} />} />
+          <Route path="/home" element={<Home />} exact />
 
           <Route path="/projects" element={<Projects />} />
 
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
-      <Footer />
     </>
   );
 }

@@ -1,14 +1,17 @@
-import About from "./About";
-import Images from "./Images";
+import About from "./AboutPage/About";
+import Images from "./AboutPage/Images";
 import { gsap, Power3 } from "gsap";
+import Layout from "../Layout/Layout";
 function Home() {
   let tl = new gsap.timeline();
   let ease = Power3.easeOut();
   return (
-    <div className="min-h-screen">
-      <About />
-      <Images timeline={tl} ease={ease} />
-    </div>
+    <Layout>
+      <div className="min-h-screen">
+        <About />
+        <Images timeline={tl} ease={ease} />
+      </div>
+    </Layout>
   );
 }
 
