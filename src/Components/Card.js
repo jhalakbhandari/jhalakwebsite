@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 
 function Card() {
   return (
@@ -26,10 +27,34 @@ function Card() {
           >
             Visit
           </a>
+=======
+import "./Card.css";
+const Card = ({ title, description, imageUrl }) => {
+  return (
+    <div className="card-container">
+      <div className="image-container">
+        <img src={imageUrl} alt="" />
+      </div>
+      <div className="card-content">
+        <div className="card-title">
+          <h3>{title}</h3>
+        </div>
+        <div className="card-body">
+          <p>{description}</p>
+        </div>
+        <div className="btn">
+          <button>
+            <p className="view">View More</p>
+          </button>
+>>>>>>> 010ea49b03c45289d6a76b2c49c20f7726b3fad2
         </div>
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
 
+=======
+};
+>>>>>>> 010ea49b03c45289d6a76b2c49c20f7726b3fad2
 export default Card;

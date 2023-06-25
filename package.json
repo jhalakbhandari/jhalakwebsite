@@ -1,8 +1,16 @@
 {
+<<<<<<< HEAD
   "homepage": "https://jhalakbhandari.github.io/Glimpseweb",
   "name": "jhalakwebsite",
   "version": "0.1.0",
   "private": true,
+=======
+  "home": "https://jhalakbhandari.github.io/jhalak/index.html",
+  "name": "jhalakwebsite",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://jhalakbhandari.github.io",
+>>>>>>> 010ea49b03c45289d6a76b2c49c20f7726b3fad2
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
